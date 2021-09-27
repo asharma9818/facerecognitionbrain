@@ -112,7 +112,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input }); //update state imageUrl
-      fetch('http://localhost:3001/imageurl', {
+      fetch('https://pacific-tor-49113.herokuapp.com/imageurl', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -122,7 +122,7 @@ class App extends Component {
    //passed the current input state to the model
       .then(response => {
         if(response){
-          fetch('http://localhost:3001/image', {
+          fetch('https://pacific-tor-49113.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
