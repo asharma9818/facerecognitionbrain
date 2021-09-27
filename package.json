@@ -16,6 +16,7 @@
     "react-scripts": "^4.0.3",
     "react-tilty": "^2.0.3",
     "tachyons": "^4.12.0",
+    "tsparticles": "^1.35.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
